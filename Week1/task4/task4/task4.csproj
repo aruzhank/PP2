@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D40CED5-B9FB-4C7B-997A-8532C2572BE3}</ProjectGuid>
+    <ProjectGuid>{2B61F1E2-5F8D-49F8-B017-5E1ACA116FEE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TesterCode</RootNamespace>
-    <AssemblyName>TesterCode</AssemblyName>
+    <RootNamespace>task4</RootNamespace>
+    <AssemblyName>task4</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
