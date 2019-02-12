@@ -9,7 +9,7 @@ namespace task2
 {
     class Program
     {
-        static bool isPrime(int n)
+        static bool isPrime(int n)                      //пишем функцию для проверки простых чисел
         {
             bool pr = true;
             if (n < 2)
@@ -27,24 +27,24 @@ namespace task2
         }
         static void Main(string[] args)
         {
-            StreamReader st = new StreamReader(@"C:\Users\Acer\PP2\task2\task2\input.txt");
-            string[] s = st.ReadToEnd().Split();
-            StreamWriter sw = new StreamWriter(@"C:\Users\Acer\PP2\task2\task2\output.txt");
-            int[] arr = new int[s.Length];
+            StreamReader st = new StreamReader(@"C:\Users\Acer\PP2\task2\task2\input.txt");               //открываем файл
+            string[] s = st.ReadToEnd().Split();                                                          //читаем содержимое
+            StreamWriter sw = new StreamWriter(@"C:\Users\Acer\PP2\task2\task2\output.txt");              //указываем файл, куда нужно написать простые числа
+            int[] arr = new int[s.Length];                                                                //создаем новый массив для хранения простых чисел
             for(int i=0; i<s.Length; i++)
             {
-                arr[i] = int.Parse(s[i]);
+                arr[i] = int.Parse(s[i]);                                                                 //конвертируем массив в int
  
             }
             for (int i = 0; i < s.Length; i++)
             {
-                if (isPrime(arr[i]) == true)
+                if (isPrime(arr[i]) == true)                                                             //если функция правильная
                 {
-                    sw.Write(arr[i] + " ");
+                    sw.Write(arr[i] + " ");                                                              //выводим простые числа в другом файле
                 }
             }
 
-            sw.Close();
+            sw.Close();                                                                                 //закрываем файл
 
             Console.ReadKey();
         }
