@@ -23,7 +23,7 @@ namespace problem1
                 if (index == i)                                                         //даем цвет
                 {
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.BackgroundColor = ConsoleColor.Blue;
+                    Console.BackgroundColor = ConsoleColor.Magenta;
                     Console.WriteLine(i + 1 + ". " + fi[i].Name);
                 }
                 else if (fi[i].GetType() == typeof(FileInfo))
