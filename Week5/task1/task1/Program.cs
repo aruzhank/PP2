@@ -14,8 +14,11 @@ namespace task1
         public double b;
         public Complex()
         {
-            a = 8;
-            b = 7;
+
+        }
+        public void Print()
+        {
+            Console.WriteLine(a + "+" + b + "i");
         }
     }
 
@@ -23,7 +26,7 @@ namespace task1
     {
         static void Main(string[] args)
         {
-            F2();
+            F1();
         }
 
         private static void F2()
@@ -36,10 +39,13 @@ namespace task1
 
         private static void F1()
         {
-            Complex c = new Complex();
+            Complex num = new Complex();
+            num.a = 8;
+            num.b = 7;
+            num.Print();
             FileStream fs = new FileStream("complex.txt", FileMode.Create, FileAccess.Write);
             XmlSerializer xml = new XmlSerializer(typeof(Complex));
-            xml.Serialize(fs, c);
+            xml.Serialize(fs, num);
             fs.Close();
         }
     }
